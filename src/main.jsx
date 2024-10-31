@@ -17,6 +17,7 @@ const router = createBrowserRouter([
     errorElement: <Error />,
     children: [
       { path: '/', element: <Launch />} ,
+      // { path: 'pathname', element: componentName (don't forget to import first)>},
     ]
   },
 ]);
