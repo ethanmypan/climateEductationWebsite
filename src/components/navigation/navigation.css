@@ -1,9 +1,12 @@
 #navigation {
+    position: absolute;
+    z-index: 10;
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 90%;
-    margin: 0 auto;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 #navigation img {
