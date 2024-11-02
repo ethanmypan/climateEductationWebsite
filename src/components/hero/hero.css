@@ -1,0 +1,36 @@
+#hero {
+    display: flex;
+    width: inherit;
+    height: inherit;
+    justify-content: center;
+    place-items: center;
+}
+
+#slogan {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    background-color: rgba(0, 0, 0, 0.2);;
+    border-radius: 20px;
+    width: 50%;
+}
+
+#slogan h2 {
+    text-align: center;
+    color: white;
+    font-size: clamp(2rem, 2vw + 2rem, 3rem);
+}
+
+#slogan h1 {
+    text-align: center;
+    color: white;
+    font-size: 4rem;
+}
+
+#hero img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+

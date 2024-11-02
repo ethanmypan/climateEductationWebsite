@@ -1,0 +1,32 @@
+#navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+}
+
+#navigation img {
+    height: 50px;
+    width: 50px;
+}
+
+#navigation_links {
+    display: flex;
+    gap: 20px;
+}
+
+#navigation_links button {
+    background: #2E9D1D;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 10px;
+    font-size: 1.2rem;
+}
+
+#navigation_links button a {
+    text-decoration: none;
+    color: white;
+}
+
+
