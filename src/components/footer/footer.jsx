@@ -22,7 +22,7 @@ export default function Footer() {
             </div>
             <div id='links'>
                 <p>Links:</p>
-                <a href='#'>About Us</a>
+                <a href='/about-us'>About Us</a>
                 <a href='#'>For Teachers</a>
                 <a href='#'>Games</a>
                 <a href='#'>Activities</a>

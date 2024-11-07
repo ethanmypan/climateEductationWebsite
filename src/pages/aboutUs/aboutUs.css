@@ -20,6 +20,18 @@
     object-fit: cover;
 }
 
+#banner-gif {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin: 0 auto;
+    width: 50%;
+    min-width: 300px;
+    max-width: 500px;
+    filter: drop-shadow(0 0 10px yellow);
+}
+
 #banner-text {
     position: absolute;
     top: 0;
@@ -28,6 +40,7 @@
     z-index: 0;
     width: inherit;
     height: inherit;
+    text-shadow: 0 0 10px black;
 }
 
 #banner h1, #banner h2 {
@@ -39,11 +52,12 @@
 
 #banner h1 {    
     font-size: clamp(1rem, 2vw + 1rem, 2rem);
+    text-align: center;
 }
 
 #banner h2 {
     text-align: center;
-    padding-top: calc(100vh - 250px);
+    padding-top: calc(100vh - 200px);
 }
 
 #content {
@@ -61,10 +75,12 @@
 #mission h1 {
     text-align: center;
     width: 80%;
+    min-width: 300px;
+    max-width: 800px;
     display: flex;
     margin: 0 auto;
     font-size: clamp(1rem, 2vw + 1rem, 2rem);
-    padding: 50px;
+    padding: 50px 0;
 }
 
 .about-us-content {

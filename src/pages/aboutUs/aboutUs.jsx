@@ -1,5 +1,6 @@
 import './aboutUs.css'
-import bgBanner from '../../assets/aboutUsBgBanner.png'
+import Meadow from '../../assets/meadow.jpg'
+import SparklingEarth from '../../assets/earthSparks.webp'
 
 
 export default function AboutUs() {
@@ -7,10 +8,11 @@ export default function AboutUs() {
     return (
         <div id="about-us-page">
             <section id="banner">
-                <img id='banner-img' src={bgBanner} alt='arm stretched out with leaves placed orderly towards hand' />
+                <img id='banner-img' src={Meadow} alt='Sparkling meadow grass with dews dripping.' />
+                <img id='banner-gif' src={SparklingEarth} alt='Drawing of earth with sparkles embraced by a leafy vine' />
                 <div id="banner-text">
-                    <h1>About Us</h1> 
                     <h2>Empowering K-12 Climate Education for a Sustainable Future</h2>
+                    <h1>About Us</h1> 
                 </div>
             </section>
             <section id='content'>
@@ -21,8 +23,8 @@ export default function AboutUs() {
                         fostering responsible future leaders.
                     </h1>
                 </section>
-                <section id='why-it-matters' class='about-us-content'>
-                   <div class='about-us-section-text'>
+                <section id='why-it-matters' className='about-us-content'>
+                   <div className='about-us-section-text'>
                         <h3>Why Climate Education Matters?</h3>
                         <p>
                             There is a lack of comprehensive climate education in K-12 schools and leave students with only superficial knowledge. 
@@ -31,9 +33,9 @@ export default function AboutUs() {
                    </div>
                     <img src='/images/earth.png' alt='earth' />
                 </section>
-                <section id='our-approach' class='about-us-content'>
+                <section id='our-approach' className='about-us-content'>
                     <img src='/images/solarBattery.png' alt='solar battery' />
-                    <div class='about-us-section-text'>
+                    <div className='about-us-section-text'>
                         <h3>Our Approach</h3>
                         <h4>Hands-On Learning for Lasting Impact</h4>
                         <p>
