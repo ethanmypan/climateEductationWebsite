@@ -1,6 +1,8 @@
 import './aboutUs.css'
 import SparklingEarth from '../../assets/earthSparks.webp'
 import MeadowVideo from '../../assets/meadowVideo.mp4'
+import HandsUnderRain from '../../assets/handsUnderRain.jpg'
+import HandsonLearning from '../../assets/hands-onLearning.jpg'
 
 
 export default function AboutUs() {
@@ -38,10 +40,10 @@ export default function AboutUs() {
                             This delays their understanding of the crisis and limits opportunities for early engagement in meaningful climate action.
                         </p>
                    </div>
-                    <img src='/images/earth.png' alt='earth' />
+                    <img src={HandsUnderRain} alt='Hands holding a plant under the rain' />
                 </section>
                 <section id='our-approach' className='about-us-content'>
-                    <img src='/images/solarBattery.png' alt='solar battery' />
+                    <img src={HandsonLearning} alt='learning technology hands-on' />
                     <div className='about-us-section-text'>
                         <h3>Our Approach</h3>
                         <h4>Hands-On Learning for Lasting Impact</h4>

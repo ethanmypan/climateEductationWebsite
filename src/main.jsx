@@ -9,6 +9,8 @@ import App from './App.jsx'
 import Launch from './pages/launch/launch.jsx'
 import Error from './pages/error/error.jsx'
 import AboutUs from './pages/aboutUs/aboutUs.jsx'
+import ForTeachers from './pages/forTeachers/forTeachers.jsx';
+import Activity from './pages/activity/activity.jsx';
 
 
 const router = createBrowserRouter([
@@ -18,7 +20,9 @@ const router = createBrowserRouter([
     errorElement: <Error />,
     children: [
       { path: '/', element: <Launch />} ,
-      { path: '/about-us', element: <AboutUs />}
+      { path: '/about-us', element: <AboutUs />},
+      { path: '/for-teachers', element: <ForTeachers />},
+      { path: '/activity', element: <Activity />}
       // { path: 'pathname', element: componentName (don't forget to import first)>},
     ]
   },

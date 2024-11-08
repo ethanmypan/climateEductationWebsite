@@ -23,9 +23,9 @@ export default function Footer() {
             <div id='links'>
                 <p>Links:</p>
                 <a href='/about-us'>About Us</a>
-                <a href='#'>For Teachers</a>
+                <a href='/for-teachers'>For Teachers</a>
                 <a href='#'>Games</a>
-                <a href='#'>Activities</a>
+                <a href='/activity'>Activities</a>
                 <a href='#'>AI Chat</a>
             </div>
             <div id='socials'>

@@ -1,0 +1,17 @@
+#for-teachers-page {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-top: 50px;
+    min-height: calc(100vh / 2);
+
+}
+
+#for-teachers-page h1 {
+    text-align: center;
+    width: auto;
+    color: green;
+    font-size: clamp(1rem, 2vw + 1rem, 2rem);
+    border-top: solid 1px black;
+    padding-top: 20px;
+}

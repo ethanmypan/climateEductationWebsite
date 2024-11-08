@@ -20,7 +20,7 @@ export default function Launch() {
             </div>
             <div id="icons">
                 <a href="#"><img src={Games} /></a>
-                <a href="#"><img src={Activities} /></a>
+                <a href="/activity"><img src={Activities} /></a>
                 <a href="#"><img src={AI_Chat} /></a>
             </div>
         </div>

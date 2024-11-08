@@ -143,3 +143,8 @@
     flex-direction: column;
     font-size: clamp(1rem, 2vw + 1rem, 1.5rem);
 }
+
+#why-it-matters {
+    background-color: rgba(50,205,50, 0.2);
+    padding-bottom: 50px;
+}
