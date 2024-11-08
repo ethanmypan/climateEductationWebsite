@@ -1,5 +1,5 @@
 import './hero.css'
-import bgbanner from '../../assets/bgbanner.gif'
+import bgVideo from '../../assets/bgVideo.mp4'
 
 export default function Hero() {
     return (
@@ -9,7 +9,7 @@ export default function Hero() {
                 <h2>Takes One Thing</h2>
                 <h1>YOU</h1>
             </div>
-            <img src={bgbanner} alt='green leafy branches swaying as the wind blows' />          
+            <video src={bgVideo} autoPlay loop muted />
         </div>
     )
 }

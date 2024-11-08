@@ -2,7 +2,13 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
+}
+
+html, body {
+  scroll-behavior: smooth;
   overflow-x: hidden;
+  color: gray;
+  font-family: 'Palatino', 'URW Palladio L', serif
 }
 
 /* :root {
