@@ -1,0 +1,40 @@
+#launch-page {
+    position: relative;
+    width: 100vw;
+    height: auto;
+}
+
+#mission-section {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    gap: 10px;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    justify-content: space-evenly;
+}
+
+#statement {
+    width: 45%;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    font-size: clamp(1rem, 2vw + 1rem, 2rem);
+}
+
+#mission-section img {
+    width: 45%;
+    object-fit: contain;
+    min-width: 300px;
+    outline: green;
+    border-radius: 10px;
+}
+
+#icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-evenly;
+    padding: 20px;
+}

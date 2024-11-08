@@ -1,0 +1,40 @@
+#footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 100px;
+    border-top: solid 1px black;
+    gap: 20px;
+}
+
+#footer img {
+    height: 100px;
+    width: 100px;
+}
+
+#links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#links p {
+    margin-bottom: 0;
+}
+
+#links a {
+    text-decoration: none;
+    color: black;
+}
+
+#social-icons{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 1em;
+}
+
+#socials  img{
+    height: 2rem;
+    width: 2rem;
+}
