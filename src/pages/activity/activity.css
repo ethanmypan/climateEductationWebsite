@@ -1,0 +1,45 @@
+#activity-page {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-top: 50px;
+    min-height: calc(100vh / 2);
+}
+
+#activity-page h1 {
+    text-align: center;
+    width: auto;
+    color: black;
+    font-size: clamp(1rem, 2vw + 1rem, 2rem);
+    border-top: solid 1px black;
+    padding-top: 20px;
+}
+
+.activity-section {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: auto;
+}
+
+#solar-assembly {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+#solar-assembly img {
+    width: 45%;
+    object-fit: contain;
+    min-width: 300px;
+    max-width: 350px;
+}
+
+.activity-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 45%;
+}
