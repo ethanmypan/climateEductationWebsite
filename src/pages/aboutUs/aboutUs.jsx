@@ -6,6 +6,16 @@ import HandsonLearning from '../../assets/hands-onLearning.jpg'
 
 
 export default function AboutUs() {
+
+    const about_us = `
+        At EcoSpark, we believe in the power of early education to inspire a sustainable future.
+        The climate crisis is one of the greatest challenges of our time, however, climate education 
+        is often overlooked in traditional curricula. EcoSpark exists to fill this gap, providing 
+        educators with accessible, engaging tools and activities that make climate science and 
+        sustainability relatable and actionable for K-12 students. We envision a world where every 
+        student grows up with the knowledge and motivation to protect our planet.
+    `
+
    
     return (
         <div id="about-us-page">
@@ -13,8 +23,9 @@ export default function AboutUs() {
                 <video id='banner-video' src={MeadowVideo} autoPlay loop muted />
                 <img id='banner-gif' src={SparklingEarth} alt='Drawing of earth with sparkles embraced by a leafy vine' />
                 <div id="banner-text">
-                    <h2>Enhancing K-12 Climate Education for a Sustainable Future</h2>
+                    {/* <h2>Enhancing K-12 Climate Education for a Sustainable Future</h2> */}
                     <h1>About Us</h1> 
+                    <p>{about_us}</p>
                 </div>
             </section>
             <section id='content'>

@@ -5,8 +5,11 @@
     align-items: center;
     justify-content: space-between;
     width: 90%;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding: 5px 5%;
+    /* padding-right: 5%; */
+    /* background-color: rgb(255, 255, 255); */
+    box-shadow: black 0px 4px 10px;
+    backdrop-filter: blur(5px);
 }
 
 #navigation img {
@@ -25,6 +28,16 @@
     border-radius: 5px;
     padding: 10px 10px;
     font-size: 1.2rem;
+    box-shadow: black 0px 4px 10px;
+}
+
+#navigation_links button:hover {
+    background: #39c524;
+    /* border: none;
+    border-radius: 5px;
+    padding: 10px 10px;
+    font-size: 1.2rem;  
+    box-shadow: black 0px 4px 10px; */
 }
 
 #navigation_links button a {

@@ -1,0 +1,51 @@
+.three-d-element {
+    position: relative;
+    display: flex;
+    width: clamp(300px, 50vw, 650px);
+    height: 650px;
+    overflow: hidden;
+    clip-path: inset(0 0 10% 0); /* Clips the bottom 10% */
+}
+
+#spline-elements {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.three-d-element a h1, 
+.three-d-element p,
+#click-screws {
+    position: absolute;
+    z-index: 1;
+    text-decoration: none;
+    padding: 10px 20px;
+    text-shadow: green 1px 1px 1px, black 2px 2px 6px;
+    color: white;
+}
+
+.three-d-element a h1 {
+    top: 1%;
+    left: 5%;
+    font-size: clamp(2rem, 2vw + 2rem, 3rem);
+}
+
+
+.three-d-element p {
+    top: 15%;
+    left: 5%;
+}
+
+#click-screws {
+    bottom: 10%;
+    right: 5%;
+}
+
+@media screen and (max-width: 650px) {
+    #three-d-element {
+        width: 100%;
+    }    
+}
