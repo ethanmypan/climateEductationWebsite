@@ -12,7 +12,7 @@ export default function Activity() {
             <h1>Activity</h1>
             <section className="activity-section">
                 <div id="solar-assembly">              
-                    <img src='https://placehold.co/300' />
+                    <img src='https://placehold.co/100' />
                     <div className="activity-text">
                         <h2>Solar Assembly Activity</h2>
                         <p>{solarAssemblyDescription}</p>

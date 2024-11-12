@@ -9,9 +9,9 @@
 #activity-page h1 {
     text-align: center;
     width: auto;
-    color: black;
-    font-size: clamp(1rem, 2vw + 1rem, 2rem);
-    border-top: solid 1px black;
+    color: green;
+    font-size: clamp(1.5rem, 2vw + 1.5rem, 3rem);
+    /* border-top: solid 1px black; */
     padding-top: 20px;
 }
 
@@ -31,15 +31,20 @@
 }
 
 #solar-assembly img {
-    width: 45%;
+    width: 25%;
     object-fit: contain;
-    min-width: 300px;
-    max-width: 350px;
+    min-width: 200px;
+    max-width: 200px;
 }
 
 .activity-text {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    width: 45%;
+    width: 65%;
+    min-width: 200px;
+}
+
+.activity-text h2 {
+    color: black;
 }
