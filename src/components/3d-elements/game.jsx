@@ -8,7 +8,7 @@ export default function Game() {
               <h1>Games</h1>
           </a>
           <p>Games to make your learning fun.</p>
-        <Spline classname='spline-elements' scene="https://prod.spline.design/hxV4yfs5qsnKgtt1/scene.splinecode" />
+        <Spline className='spline-elements' scene="https://prod.spline.design/hxV4yfs5qsnKgtt1/scene.splinecode" />
       </div>
     );
 }

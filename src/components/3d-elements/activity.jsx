@@ -8,7 +8,7 @@ export default function Activity() {
               <h1>Activity</h1>
           </a>
           <p>Find sample activities the you can easily integrate in your classroom.</p>
-          <Spline classname='spline-elements' scene="https://prod.spline.design/DgVvXZpLyYKGWdyD/scene.splinecode" /> 
+          <Spline className='spline-elements' scene="https://prod.spline.design/DgVvXZpLyYKGWdyD/scene.splinecode" /> 
           <h2 id='click-screws'>Click screws to interact.</h2>   
       </div>
     );
