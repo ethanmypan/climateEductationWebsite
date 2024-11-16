@@ -15,7 +15,6 @@
     font-size: clamp(2rem, 2vw + 2rem, 3rem);
     /* text-shadow: green 2px 2px 1px, black 2px 2px 2px; */
     background-color: rgba(50,205,50, 0.2);
-
     padding: 10px 20px;
 }
 
@@ -119,4 +118,33 @@
     flex-wrap: wrap;
     place-self: center;
     justify-content: center;
+}
+
+#testimonial-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap; /* Keep the container in a single row */
+    gap: 50px;
+    /* overflow: hidden; Prevents horizontal overflow */
+}
+
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    width: 600px; 
+    height: auto;
+    margin: 10px;
+}
+
+#testimonial-text {
+    display: block; 
+    white-space: normal;
+    word-wrap: break-word; 
+    width: 600px;
+    /* overflow-wrap: break-word; Handle long words without breaking layout */
+}
+
+#testimonial-section > h1 {
+    width: 90%;
+    place-self: center;
 }

@@ -155,7 +155,8 @@
     padding-top: 50px;
 }
 
-.about-us-content h3 {
+.section-title {
+    font-size: clamp(1.5rem, 2vw + 1.5rem, 3rem);
     color: green;
 }
 
@@ -174,7 +175,50 @@
     font-size: clamp(1rem, 2vw + 1rem, 1.5rem);
 }
 
-#why-it-matters {
+#why-it-matters,
+#team {
     background-color: rgba(50,205,50, 0.2);
     padding-bottom: 50px;
+}
+
+#team > h3 {
+    width: 90%;
+    place-self: center;
+    text-align: center;
+}
+
+#team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 100px;
+    width: 90%;
+    place-self: center;
+}
+
+#team-container h2 {
+    color: green;
+}
+
+#team-container div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 0 20px;
+    box-shadow: green 4px 4px 10px, gold -4px -4px 10px;
+    width: 300px;
+    height: auto;
+}
+
+#team-container img {
+    border-radius: 50%;
+    object-fit: cover;
+    transition: all 0.5s;
+    height: 300px;
+}
+
+#team-container img:hover {
+    border-radius: 0;
 }

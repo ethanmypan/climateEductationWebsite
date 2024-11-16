@@ -6,15 +6,18 @@ import TeacherStudent from '../../assets/teacher-student.jpg';
 import ClimateTech from '../../assets/climateTech.jpg';
 import EarlyClimateAction from '../../assets/earlyClimateAction.webp';
 import PlantingTrees from '../../assets/plantingTrees.webp';
+import testimonialsData from "./testimonials.json";
+
 
 // Lazy load 3D elements
-const HappyRobot = React.lazy(() => import('../../components/3d-elements/happyrobot.jsx'));
+// const HappyRobot = React.lazy(() => import('../../components/3d-elements/happyrobot.jsx'));
 const Game = React.lazy(() => import('../../components/3d-elements/game.jsx'));
 const Activity = React.lazy(() => import('../../components/3d-elements/activity.jsx'));
 
 export default function Launch() {
     const [hoveredImage, setHoveredImage] = useState(null);
     const [inView, setInView] = useState(false);
+    const [testimonials, setTestimonials] = useState([]);
 
     const images = [
         { src: TeacherStudent, alt: "Teacher and Student" },
@@ -45,10 +48,15 @@ export default function Launch() {
         return () => observer.disconnect();
     }, []);
 
+    useEffect(() => {
+        setTestimonials(testimonialsData);
+    }, []);
+    
+
     return (
         <div id="launch-page">
             <Hero />
-            <div id="mission-section">
+            <section id="mission-section">
                 <h1 className="section-header">What we do</h1>
                 <p>{valueProp}</p>
                 <div id="image-container" onMouseLeave={() => setHoveredImage(null)}>
@@ -75,20 +83,36 @@ export default function Launch() {
                     </div>
                 </div>
                 <h2> Let's drive Climate Action early!</h2>
-            </div>
+            </section>
             
-            <div id="three-d-section">
+            <section id="three-d-section">
                 <h1 className="section-header">Engage with us</h1>
                 <div id="three-d-container">
                     {inView && (
                         <React.Suspense fallback={<div>Loading 3D content...</div>}>
-                            <HappyRobot />
+                            {/* <HappyRobot /> */}
                             <Game />
                             <Activity />
                         </React.Suspense>
                     )}
                 </div>
-            </div>
+            </section>
+
+            <section id="testimonial-section">
+                <h1 className="section-header">Hear from the others</h1>
+                <marquee behavior="alternate" direction="left">
+                    <div id="testimonial-container">
+                        {testimonials.map((testimonial, index) => (
+                            <div className="testimonial" key={index}>
+                                <h3 id="name">{testimonial.name}</h3>
+                                <p id="stars">{"⭐".repeat(testimonial.stars)}</p>
+                                <p id="testimonial-text">{testimonial.testimonial}</p>
+                                <p id="role"><i>{testimonial.role}</i></p>
+                            </div>
+                        ))}
+                    </div>
+                </marquee>
+            </section> 
         </div>
     );
 }

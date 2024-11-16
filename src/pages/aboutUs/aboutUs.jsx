@@ -3,6 +3,10 @@ import SparklingEarth from '../../assets/earthSparks.webp'
 import MeadowVideo from '../../assets/meadowVideo.mp4'
 import HandsUnderRain from '../../assets/handsUnderRain.jpg'
 import HandsonLearning from '../../assets/hands-onLearning.jpg'
+import Kim from '../../assets/kim.png'
+import Kirsten from '../../assets/kirsten.png'
+import Marisa from '../../assets/marisa.png'
+import Pheonix from '../../assets/pheonix.png'
 
 
 export default function AboutUs() {
@@ -45,7 +49,7 @@ export default function AboutUs() {
                 </section>
                 <section id='why-it-matters' className='about-us-content'>
                    <div className='about-us-section-text'>
-                        <h3>Why Climate Education Matters?</h3>
+                        <h3 className='section-title'>Why Climate Education Matters?</h3>
                         <p>
                             There is a lack of comprehensive climate education in K-12 schools which leave students with superficial knowledge. 
                             This delays their understanding of the crisis and limits opportunities for early engagement in meaningful climate action.
@@ -56,11 +60,47 @@ export default function AboutUs() {
                 <section id='our-approach' className='about-us-content'>
                     <img src={HandsonLearning} alt='learning technology hands-on' />
                     <div className='about-us-section-text'>
-                        <h3>Our Approach</h3>
+                        <h3 className='section-title'>Our Approach</h3>
                         <h4>Hands-On Learning for Lasting Impact</h4>
                         <p>
                             Designed activities for students to learn experientially and for teachers to easily integrate in their classrooms thereby bridging the gap between theories and practical application.
                         </p>
+                    </div>
+                </section>
+                <section id='team' className='about-us-content'>
+                    <h3 className='section-title'>Meet The Team</h3>
+                    <div id='team-container'>
+                        <div>
+                            <h2>Kim Lim</h2>
+                            <img src={Kim} />
+                            <p>CS Major</p>
+                            <p>Loves design and creating responsive and beautiful digital products.</p>
+                            <p>Passionate about the environment and wants to utilize his skill to make a change.</p>
+                        </div>
+                        <div>
+                            <h2>Kirsten Olympia</h2>
+                            <img src={Kirsten} />
+                            <p>Education Studies Major</p>
+                            <p>background</p>
+                        </div>
+                        <div>
+                            <h2>Ethan Perez</h2>
+                            <img src='https://placehold.co/200' />
+                            <p>Math & CS Major</p>
+                            <p>background</p>
+                        </div>
+                        <div>
+                            <h2>Marisa Espinoza</h2>
+                            <img src={Marisa} />
+                            <p>Communications Major</p>
+                            <p>background</p>
+                        </div>
+                        <div>
+                            <h2>Phoenix Kang</h2>
+                            <img src={Pheonix} />
+                            <p>Electrical Engineering Major</p>
+                            <p>background</p>
+                        </div>
                     </div>
                 </section>
             </section>
