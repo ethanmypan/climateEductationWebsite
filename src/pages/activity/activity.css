@@ -19,7 +19,10 @@
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    width: auto;
+    width: 80%;
+    place-self: center;
+    min-width: 300px;
+    max-width: 1000px;
 }
 
 #solar-assembly {
@@ -35,6 +38,12 @@
     object-fit: contain;
     min-width: 200px;
     max-width: 200px;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+}
+
+#solar-assembly img:hover {
+    border-radius: 10px;
 }
 
 .activity-text {

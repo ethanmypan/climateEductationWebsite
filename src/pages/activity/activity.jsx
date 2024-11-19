@@ -1,4 +1,5 @@
 import './activity.css'
+import KidsAndSolar from '../../assets/kidsAndSolar.jpg'
 
 export default function Activity() {
     const solarAssemblyDescription = `
@@ -12,9 +13,9 @@ export default function Activity() {
             <h1>Activity</h1>
             <section className="activity-section">
                 <div id="solar-assembly">              
-                    <img src='https://placehold.co/100' />
+                    <a href=''><img src={KidsAndSolar} /></a>
                     <div className="activity-text">
-                        <h2>Solar Assembly Activity</h2>
+                        <a href=''><h2>Solar Assembly Activity</h2></a>
                         <p>{solarAssemblyDescription}</p>
                     </div>
                 </div>
