@@ -13,9 +13,9 @@ export default function Activity() {
             <h1>Activity</h1>
             <section className="activity-section">
                 <div id="solar-assembly">              
-                    <a href=''><img src={KidsAndSolar} /></a>
+                    <a href='/solar-assembly'><img src={KidsAndSolar} /></a>
                     <div className="activity-text">
-                        <a href=''><h2>Solar Assembly Activity</h2></a>
+                        <a href='/solar-assembly'><h2>Solar Assembly Activity</h2></a>
                         <p>{solarAssemblyDescription}</p>
                     </div>
                 </div>
