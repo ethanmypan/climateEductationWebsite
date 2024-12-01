@@ -7,12 +7,8 @@ import ClimateTech from '../../assets/climateTech.jpg';
 import EarlyClimateAction from '../../assets/earlyClimateAction.webp';
 import PlantingTrees from '../../assets/plantingTrees.webp';
 import testimonialsData from "./testimonials.json";
-
-
-// Lazy load 3D elements
-// const HappyRobot = React.lazy(() => import('../../components/3d-elements/happyrobot.jsx'));
-const Game = React.lazy(() => import('../../components/3d-elements/game.jsx'));
-const Activity = React.lazy(() => import('../../components/3d-elements/activity.jsx'));
+import Game from '../../components/3d-elements/game.jsx'
+import Activity from '../../components/3d-elements/activity.jsx'
 
 export default function Launch() {
     const [hoveredImage, setHoveredImage] = useState(null);
@@ -35,18 +31,21 @@ export default function Launch() {
         const observer = new IntersectionObserver(
             ([entry]) => {
                 if (entry.isIntersecting) {
-                    setInView(true); // Load components once in view
-                    observer.disconnect(); // Stop observing after load
+                    setInView(true); // Set in view
+                } else {
+                    setInView(false); // Mark as out of view
                 }
             },
             { threshold: 0.1 }
         );
-
-        const threeDSection = document.getElementById('three-d-section');
-        if (threeDSection) observer.observe(threeDSection);
-
+    
+        const threeDContainer = document.getElementById("three-d-container");
+        if (threeDContainer) observer.observe(threeDContainer);
+    
+        // Clean up observer when component unmounts
         return () => observer.disconnect();
     }, []);
+    
 
     useEffect(() => {
         setTestimonials(testimonialsData);
@@ -84,19 +83,15 @@ export default function Launch() {
                 </div>
                 <h2> Let's drive Climate Action early!</h2>
             </section>
-            
-            <section id="three-d-section">
+
+            <section id="engagement-section">
                 <h1 className="section-header">Engage with us</h1>
-                <div id="three-d-container">
-                    {inView && (
-                        <React.Suspense fallback={<div>Loading 3D content...</div>}>
-                            {/* <HappyRobot /> */}
-                            <Game />
-                            <Activity />
-                        </React.Suspense>
-                    )}
+                <div id="three-d-container" className={inView ? "appear" : "disappear"}>
+                    <Game />
+                    <Activity />
                 </div>
             </section>
+
 
             <section id="testimonial-section">
                 <h1 className="section-header">Hear from the others</h1>

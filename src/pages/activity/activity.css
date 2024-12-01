@@ -57,3 +57,7 @@
 .activity-text h2 {
     color: black;
 }
+
+.activity-text a {
+    text-decoration: none;
+}

@@ -50,7 +50,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: opacity 1s ease;
+    transition: all 0.5s ease;
 }
 
 /* Initial clipping regions */
@@ -106,7 +106,7 @@
 }
 
 
-#three-d-section {
+#engagement-section {
     display: flex;
     flex-direction: column;
     place-self: center;
@@ -116,8 +116,19 @@
 #three-d-container {
     display: flex;
     flex-wrap: wrap;
-    place-self: center;
+    place-self: center; 
     justify-content: center;
+    min-height: 650px;
+}
+
+.disappear {
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.appear {
+    opacity: 1;
+    transition: all 1s ease-out;
 }
 
 #testimonial-container {
@@ -125,7 +136,6 @@
     flex-direction: row;
     flex-wrap: nowrap; /* Keep the container in a single row */
     gap: 50px;
-    /* overflow: hidden; Prevents horizontal overflow */
 }
 
 .testimonial {
@@ -141,7 +151,6 @@
     white-space: normal;
     word-wrap: break-word; 
     width: 600px;
-    /* overflow-wrap: break-word; Handle long words without breaking layout */
 }
 
 #testimonial-section > h1 {

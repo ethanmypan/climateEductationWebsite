@@ -1,4 +1,5 @@
 import './solarAssembly.css'
+import SUPS from '../../assets/SUPS.png'
 
 export default function SolarAssembly() {
     const learning_obj = () => {
@@ -39,17 +40,17 @@ export default function SolarAssembly() {
                 play a crucial role in this journey: 
             </p>
             <p>
-                Module 1: Solar Battery Charger <br />
+                Module 1: <strong>Solar Battery Charger</strong> <br />
                 Think of this as the power station that converts and sends the energy on its way. 
             </p>
             <p>
-                Module 2: Battery Monitor and Controller <br />
+                Module 2: <strong>Battery Monitor and Controller</strong> <br />
                 This is the brain of the kit. Module 2 has a microcontroller that keeps an eye 
                 on the battery, making sure it doesn’t get overcharged and only supplies 
                 power to the other modules when it’s safe to do so. 
             </p>
             <p>
-                Module 3:Power Output <br />
+                Module 3:<strong>Power Output</strong> <br />
                 Now for the exciting part—using the stored energy! Here, you’ll see how the energy 
                 collected and stored in the battery can now be used to power USB-compatible devices.
             </p>
@@ -133,7 +134,7 @@ export default function SolarAssembly() {
                 {learning_obj()}
             </section>
             <section className='overview'>
-                <img src='https://placehold.co/400'></img>
+                <img src={SUPS} />
                 <div id='overview-desc'>
                     <h2>Overview</h2>
                     <p>{overview_description()}</p>

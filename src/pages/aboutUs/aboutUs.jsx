@@ -81,7 +81,8 @@ export default function AboutUs() {
                             <h2>Kirsten Olympia</h2>
                             <img src={Kirsten} />
                             <p>Education Studies Major</p>
-                            <p>background</p>
+                            <p>Loves collaborating with others and hopes to foster safe and welcoming environments</p>
+                            <p>Passionate about equitable education and equipping students with the knowledge to promote empathy and respect for the world around us.</p>
                         </div>
                         <div>
                             <h2>Ethan Perez</h2>

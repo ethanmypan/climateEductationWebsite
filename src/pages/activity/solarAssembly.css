@@ -4,7 +4,7 @@
     position: relative;
     padding-top: 100px;
     color: black;
-    width: 90%;
+    width: 80%;
     place-self: center;
 }
 
@@ -29,6 +29,7 @@
 .overview img {
     max-width: 400px;
     min-width: 300px;
+    object-fit: contain;
 }
 
 #video-steps {
