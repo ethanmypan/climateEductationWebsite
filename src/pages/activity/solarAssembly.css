@@ -35,8 +35,8 @@
 #video-steps {
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centers horizontally */
-    align-items: center; /* Centers vertically */
+    justify-content: center; 
+    align-items: center;
     margin-bottom: 50px;
 }
 

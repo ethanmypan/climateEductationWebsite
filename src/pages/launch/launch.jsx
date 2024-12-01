@@ -1,4 +1,3 @@
-// src/pages/launch/Launch.jsx
 import React, { useState, useEffect } from "react";
 import "./launch.css";
 import Hero from "../../components/hero/hero.jsx";
@@ -9,6 +8,7 @@ import PlantingTrees from '../../assets/plantingTrees.webp';
 import testimonialsData from "./testimonials.json";
 import Game from '../../components/3d-elements/game.jsx'
 import Activity from '../../components/3d-elements/activity.jsx'
+import Robot from '../../components/3d-elements/happyrobot.jsx'
 
 export default function Launch() {
     const [hoveredImage, setHoveredImage] = useState(null);
@@ -87,6 +87,7 @@ export default function Launch() {
             <section id="engagement-section">
                 <h1 className="section-header">Engage with us</h1>
                 <div id="three-d-container" className={inView ? "appear" : "disappear"}>
+                    <Robot />
                     <Game />
                     <Activity />
                 </div>

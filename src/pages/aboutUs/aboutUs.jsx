@@ -27,7 +27,6 @@ export default function AboutUs() {
                 <video id='banner-video' src={MeadowVideo} autoPlay loop muted />
                 <img id='banner-gif' src={SparklingEarth} alt='Drawing of earth with sparkles embraced by a leafy vine' />
                 <div id="banner-text">
-                    {/* <h2>Enhancing K-12 Climate Education for a Sustainable Future</h2> */}
                     <h1>About Us</h1> 
                     <p>{about_us}</p>
                 </div>
@@ -35,10 +34,6 @@ export default function AboutUs() {
             <section id='content'>
                 <section id='mission'>
                     <h1>Our Mission</h1>
-                    {/* <h1>
-                        Empowering educators with tools to engage students early on climate issues, 
-                        fostering responsible future leaders.
-                    </h1> */}
                     <div id='mission-statement'>
                         <h2><span className='green'>G</span><span className='meaning'>uiding our amazing teachers by providing them with</span></h2>
                         <h2><span className='green'>R</span><span className='meaning'>esources to teach climate education,</span></h2>
