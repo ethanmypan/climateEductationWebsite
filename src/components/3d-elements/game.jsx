@@ -4,7 +4,7 @@ import Spline from '@splinetool/react-spline';
 export default function Game() {
     return (
       <div id="game" className='three-d-element'>
-          <a href='#'>
+          <a target='_blank' href='https://create.kahoot.it/share/syn-100-kahoot/c2b149ee-1b5e-4fb8-af62-9e2465f9ffe7'>
               <h1>Games</h1>
           </a>
           <p>Games to make your learning fun.</p>

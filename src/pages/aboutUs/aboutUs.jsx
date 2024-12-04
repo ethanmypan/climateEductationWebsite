@@ -62,7 +62,7 @@ export default function AboutUs() {
                         </p>
                     </div>
                 </section>
-                <section id='team' className='about-us-content'>
+                {/* <section id='team' className='about-us-content'>
                     <h3 className='section-title'>Meet The Team</h3>
                     <div id='team-container'>
                         <div>
@@ -98,7 +98,7 @@ export default function AboutUs() {
                             <p>background</p>
                         </div>
                     </div>
-                </section>
+                </section> */}
             </section>
         </div>
     )
