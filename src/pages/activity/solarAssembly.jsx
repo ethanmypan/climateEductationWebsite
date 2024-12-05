@@ -160,7 +160,7 @@ export default function SolarAssembly() {
                 <iframe 
                     width="560" 
                     height="315" 
-                    src="https://www.youtube.com/embed/LiHYLiFaKo0?si=SuGcBoxZSEFOEOb7" 
+                    src="https://www.youtube.com/embed/g_ZT7rtqblo?si=c7I8ZfE2SwDlneMp" 
                     title="YouTube video player" 
                     allowFullScreen
                 ></iframe>
