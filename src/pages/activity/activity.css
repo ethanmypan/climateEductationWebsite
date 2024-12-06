@@ -9,9 +9,8 @@
 #activity-page h1 {
     text-align: center;
     width: auto;
-    color: black;
-    font-size: clamp(1rem, 2vw + 1rem, 2rem);
-    border-top: solid 1px black;
+    color: green;
+    font-size: clamp(1.5rem, 2vw + 1.5rem, 3rem);
     padding-top: 20px;
 }
 
@@ -19,7 +18,10 @@
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    width: auto;
+    width: 80%;
+    place-self: center;
+    min-width: 300px;
+    max-width: 1000px;
 }
 
 #solar-assembly {
@@ -31,15 +33,30 @@
 }
 
 #solar-assembly img {
-    width: 45%;
+    width: 25%;
     object-fit: contain;
-    min-width: 300px;
-    max-width: 350px;
+    min-width: 200px;
+    max-width: 200px;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+}
+
+#solar-assembly img:hover {
+    border-radius: 10px;
 }
 
 .activity-text {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    width: 45%;
+    width: 65%;
+    min-width: 200px;
+}
+
+.activity-text h2 {
+    color: black;
+}
+
+.activity-text a {
+    text-decoration: none;
 }

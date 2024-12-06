@@ -18,46 +18,61 @@
     width: 100vw;
     height: 100vh;
     object-fit: cover;
+    box-shadow: black 0px 4px 10px;
 }
 
 #banner-gif {
     position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, 0);
+    top: 50px;
+    left: 55%;
     margin: 0 auto;
-    width: 50%;
-    min-width: 300px;
-    max-width: 500px;
+    width: 600px;
     filter: drop-shadow(0 0 10px yellow);
 }
 
 #banner-text {
     position: absolute;
-    top: 0;
-    left: 0;
-    color: white;
+    top: 100px;
+    left: 5%;
     z-index: 0;
-    width: inherit;
-    height: inherit;
+    width: 60%;
+    min-width: 250px;
+    max-width: 700px;
+    min-height: 500px;
+    height: fit-content;
     text-shadow: 0 0 10px black;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    box-shadow: black 5px 5px 10px;
+    color: gold;
 }
 
-#banner h1, #banner h2 {
-    width: 90%;
+#banner h1, #banner p {
+    width: fit-content;
     margin: 0 auto;
     color: white;
-    padding-top: 70px;
+    padding: 20px 50px;
 }
 
-#banner h1 {    
-    font-size: clamp(1rem, 2vw + 1rem, 2rem);
-    text-align: center;
+#banner h1 {
+    font-size: clamp(1.5rem, 1vw + 2rem, 2rem);
 }
 
-#banner h2 {
-    text-align: center;
-    padding-top: calc(100vh - 200px);
+#banner p {
+    text-align: left;
+    font-size: clamp(0.8rem, 1vw + 0.8rem, 1.5rem);
+    text-indent: 50px;
+    line-height: clamp(1rem, 2vw + 1rem, 2rem);
+}
+
+@media screen and (max-width: 815px) {
+    #banner-text {
+        width: 90%;
+    } 
+    
+    #banner h1, #banner p {
+        padding: 20px 20px;
+    }
 }
 
 #content {
@@ -125,7 +140,8 @@
     padding-top: 50px;
 }
 
-.about-us-content h3 {
+.section-title {
+    font-size: clamp(1.5rem, 2vw + 1.5rem, 3rem);
     color: green;
 }
 
@@ -144,7 +160,50 @@
     font-size: clamp(1rem, 2vw + 1rem, 1.5rem);
 }
 
-#why-it-matters {
+#why-it-matters,
+#team {
     background-color: rgba(50,205,50, 0.2);
     padding-bottom: 50px;
+}
+
+#team > h3 {
+    width: 90%;
+    place-self: center;
+    text-align: center;
+}
+
+#team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 100px;
+    width: 90%;
+    place-self: center;
+}
+
+#team-container h2 {
+    color: green;
+}
+
+#team-container div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 0 20px;
+    box-shadow: green 4px 4px 10px, gold -4px -4px 10px;
+    width: 300px;
+    height: auto;
+}
+
+#team-container img {
+    border-radius: 50%;
+    object-fit: cover;
+    transition: all 0.5s;
+    height: 300px;
+}
+
+#team-container img:hover {
+    border-radius: 0;
 }

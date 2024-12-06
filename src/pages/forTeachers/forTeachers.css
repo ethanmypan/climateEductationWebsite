@@ -7,11 +7,58 @@
 
 }
 
-#for-teachers-page h1 {
+#for-teachers-page > h1 {
     text-align: center;
     width: auto;
     color: green;
-    font-size: clamp(1rem, 2vw + 1rem, 2rem);
-    border-top: solid 1px black;
+    font-size: clamp(1.5rem, 2vw + 1.5rem, 3rem);
     padding-top: 20px;
+}
+
+#for-teachers-page h1 > span {
+    color: black;
+}
+
+#for-teachers-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    place-self: center;
+    justify-content: space-evenly;
+    gap: 100px;
+}
+
+.for-teachers-container {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    min-width: 300px;
+    max-width: 600px;
+    gap: 20px;
+}
+
+#for-teachers-content a {
+    text-decoration: none;
+    color: green;
+    width: fit-content;
+}
+
+#for-teachers-content a h2 {
+    background-color: rgba(50,205,50, 0.2);
+    border-radius: 10px;
+    box-shadow: green 0px 2px 5px;
+    width: inherit;
+    padding: 10px 10px;
+}
+
+#for-teachers-content a h2:hover {
+    background-color: rgba(50,205,50, 0.4);
+}
+
+#related-links {
+    background-color: rgba(50,205,50, 0.2);
+    padding: 0 0 50px 30px;
+    border-radius: 40px 0 0 40px;
+    height: fit-content;
 }

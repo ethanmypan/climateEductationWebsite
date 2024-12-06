@@ -1,0 +1,45 @@
+#solar-assembly-page {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-top: 100px;
+    color: black;
+    width: 80%;
+    place-self: center;
+}
+
+#title {
+    text-align: center;
+}
+
+.overview {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+    transition: all 0.3s;
+}
+
+.overview img, 
+.overview div {
+    flex: 1 1 45%;
+}
+
+.overview img {
+    max-width: 400px;
+    min-width: 300px;
+    object-fit: contain;
+}
+
+#video-steps {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+#video-steps iframe {
+    max-width: 100%; 
+}
